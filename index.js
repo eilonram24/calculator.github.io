@@ -8,7 +8,15 @@ function totalIt() {
         total += parseFloat(input[i].value);
       }
     }
-    element = document.querySelector('.inputshow');
-    element.style.visibility = 'visible';
-    document.getElementsByName("total")[0].value = "Php" + total.toFixed(2) * value1;
+    totalresult = total.toFixed(2) * value1;
+    // element = document.querySelector('.inputshow');
+    // element.style.visibility = 'visible';
+    // document.getElementsByName("total")[0].value = "Php" + total.toFixed(2) * value1;
+      Swal.fire({
+        title: 'The total is : ',
+        text: "Php" + totalresult.toLocaleString('en-US', {maximumFractionDigits:2}),
+        icon: 'info',
+        allowOutsideClick: false
+      }
+    )
   }

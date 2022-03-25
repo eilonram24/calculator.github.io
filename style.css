@@ -39,7 +39,7 @@
     font-weight: 400;
   }
   .range {
-    width: 400px;
+    width: 100%;
     height: 15px;
     -webkit-appearance: none;
     background: #111;
@@ -60,7 +60,7 @@
   }
   .box-minmax {
     margin-top: 10px;
-    width: 400px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     font-size: 20px;
@@ -70,9 +70,13 @@
       background-color: #e6488a;
       color: white;
       border-radius: 30px 30px;
-      padding: 20px 30px;
+      padding: 20px 0;
       text-align: center;
       border: none;
-      width: 400px;
+      width: 100%;
       margin-top: 20px;
+  }
+  .btnprice2{
+    width: 400px;
+    visibility: hidden;
   }

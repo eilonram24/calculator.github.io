@@ -26,43 +26,43 @@
             <div class="style1">
                 <h3 class="heading3">Do you?</h3>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="checkbox1" checked>
+                    <input class="form-check-input" type="checkbox" value="7000" id="checkbox1" name="checkbox" checked>
                     <label class="form-check-label" for="checkbox1">
                         (Buy and sell)kjop og salg +7000
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="checkbox2" checked>
+                    <input class="form-check-input" type="checkbox" value="4000" id="checkbox2" name="checkbox" checked>
                     <label class="form-check-label" for="checkbox2">
                         Futures/leverage +4000
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="checkbox3" checked>
+                    <input class="form-check-input" type="checkbox" value="6000" id="checkbox3" name="checkbox" checked>
                     <label class="form-check-label" for="checkbox3">
                         Farming/Yield Farming/Liquidity Mining +6000
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="checkbox4" checked>
+                    <input class="form-check-input" type="checkbox" value="8000" id="checkbox4" name="checkbox" checked>
                     <label class="form-check-label" for="checkbox4">
                       kjop av noder eller lignende +8000
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="checkbox5" checked>
+                    <input class="form-check-input" type="checkbox" value="5000" id="checkbox5" name="checkbox" checked>
                     <label class="form-check-label" for="checkbox5">
                      NFT` er +5000
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="checkbox6" checked>
+                    <input class="form-check-input" type="checkbox" value="4000" id="checkbox6" name="checkbox" checked>
                     <label class="form-check-label" for="checkbox6">
                       Fatt airdrop +4000
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="checkbox7" checked>
+                    <input class="form-check-input" type="checkbox" value="5000" id="checkbox7" name="checkbox" checked>
                     <label class="form-check-label" for="checkbox7">
                      Mining +5000
                     </label>
@@ -70,19 +70,19 @@
                 <h3 class="heading3">How many transactions</h3>
                 <div>
                     <span id="rangeValue">500</span>
-                    <Input class="range" type="range" name ="" value="0" min="500" max="2000" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
+                    <Input class="range" type="range" id ="rangenumber" value="0" min="500" max="2000" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
                 </div>
                 <div class="box-minmax">
                     <span>500</span><span>2000</span>
                 </div>
                 <div>
-                    <button class="btnprice">Your price to deliver</button>
+                    <button class="btnprice" onclick="totalIt()">Your price to deliver</button>
                 </div>
                 <button class="btnprice2"></button>
             </div> 
               </div>
               <div class="col">
-                
+                    <input class="inputshow" style="visibility:hidden;" type="text" id="total" name="total">
               </div>
             </div>
           </div>
